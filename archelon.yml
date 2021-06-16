@@ -30,6 +30,7 @@ services:
     environment:
       - LDAP_BIND_PASSWORD
       - SECRET_KEY_BASE
+      - FCREPO_AUTH_TOKEN
     command: [ "bundle", "exec", "rails", "stomp:listen" ]
   archelon:
     image: docker.lib.umd.edu/archelon:latest
